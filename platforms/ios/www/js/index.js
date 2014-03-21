@@ -60,8 +60,8 @@ var app = {
 
 	        evt.preventDefault();
         
-          var zoomFactor = '8.6';
-	        cordova.plugins.barcodeScanner.scan(app.onQRCodeSuccess, app.onQRCodeFailure, [zoomFactor, 'wella']);
+          var zoomFactor = '12.6';
+	        cordova.plugins.barcodeScanner.scan(app.onQRCodeSuccess, app.onQRCodeFailure, [zoomFactor]);
 
 	    },
 
