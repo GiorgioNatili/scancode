@@ -41,7 +41,7 @@
          *    }
          * @param {Function} errorCallback
          */
-        BarcodeScanner.prototype.scan = function (successCallback, errorCallback, args) {
+        BarcodeScanner.prototype.scan = function (successCallback, errorCallback, options) {
             if (errorCallback == null) {
                 errorCallback = function () {
                 };
@@ -57,7 +57,7 @@
                 return;
             }
 
-         //   exec(successCallback, errorCallback, 'BarcodeScanner', 'scanna', [{'nome': 'melania'}]);
+            exec(successCallback, errorCallback, 'BarcodeScanner', 'scan', options);
         };
 
         //-------------------------------------------------------------------
@@ -84,4 +84,3 @@
 
         var barcodeScanner = new BarcodeScanner();
         module.exports = barcodeScanner;
-

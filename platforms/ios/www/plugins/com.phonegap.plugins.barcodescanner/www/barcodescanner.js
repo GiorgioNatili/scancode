@@ -41,25 +41,25 @@ cordova.define("com.phonegap.plugins.barcodescanner.BarcodeScanner", function(re
          *    }
          * @param {Function} errorCallback
          */
-        BarcodeScanner.prototype.scan = function (successCallback, errorCallback, options) {
-            if (errorCallback == null) {
-                errorCallback = function () {
-                };
-            }
-
-            if (typeof errorCallback != "function") {
-                console.log("BarcodeScanner.scan failure: failure parameter not a function");
-                return;
-            }
-
-            if (typeof successCallback != "function") {
-                console.log("BarcodeScanner.scan failure: success callback parameter must be a function");
-                return;
-            }
-
-            exec(successCallback, errorCallback, 'BarcodeScanner', 'scan', options);
+               BarcodeScanner.prototype.scan = function (successCallback, errorCallback, options) {
+               if (errorCallback == null) {
+               errorCallback = function () {
+               };
+               }
+               
+               if (typeof errorCallback != "function") {
+               console.log("BarcodeScanner.scan failure: failure parameter not a function");
+               return;
+               }
+               
+               if (typeof successCallback != "function") {
+               console.log("BarcodeScanner.scan failure: success callback parameter must be a function");
+               return;
+               }
+               
+               exec(successCallback, errorCallback, 'BarcodeScanner', 'scan', options);
+               
         };
-
         //-------------------------------------------------------------------
         BarcodeScanner.prototype.encode = function (type, data, successCallback, errorCallback, options) {
             if (errorCallback == null) {

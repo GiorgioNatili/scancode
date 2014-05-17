@@ -1962,6 +1962,13 @@ unsigned char* GreyscaleLuminanceSource::getMatrix() {
       memcpy(result + row * width_, greyData_ + (top_ + row) * dataWidth_ + left_, width_);
     }
   }
+    /* Added to read the inverse colors */
+    for (int i = 0; i < size; i++){
+        
+        result[i] = static_cast<unsigned char>(255 - result[i]);
+        
+    }
+    
   return result;
 }
 

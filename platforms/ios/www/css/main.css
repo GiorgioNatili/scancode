@@ -1,0 +1,98 @@
+body {
+    background: #fafafa;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+}
+
+.hero-unit {
+    margin: 50px auto 0 auto;
+    width: 300px;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 30px;
+    background-color: #eee;
+    border-radius: 6px;
+    padding: 60px;
+}
+
+.hero-unit h1 {
+    font-size: 60px;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+
+.appInfo{
+	margin-top: 10px !important;
+	margin-bottom: 20px !important;
+}
+
+.appInfo .logo{
+	text-align:center !important;
+	
+}
+
+.appInfo .logo img{
+	max-width: 100% !important;
+}
+
+.appInfo .appName{
+	text-align: right !important;
+	color: #58585A !important;
+}
+
+
+
+.featureList{
+	
+}
+.featureList a{
+	text-align: center !important;
+	
+}
+
+.featureList  .icon{
+	float: left !important;
+	color: #9C9E9F !important;
+}
+
+.featureList  .name{
+	color: #58585A !important;
+}
+
+
+.lastCodeRead{
+	text-align: center;
+	margin-top: 20px;
+}
+
+
+#sendEmail label{
+	text-align: left !important;
+}
+
+
+#sendEmail #acquiredCode{
+	font-weight: bold !important;
+}
+
+#backButton{
+
+    line-height: 50px !important;
+    
+}
+
+#backButton{
+
+    line-height: 50px !important;
+    
+}
+

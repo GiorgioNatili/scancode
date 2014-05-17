@@ -41,7 +41,7 @@ cordova.define("com.phonegap.plugins.barcodescanner.BarcodeScanner", function(re
          *    }
          * @param {Function} errorCallback
          */
-        BarcodeScanner.prototype.scan = function (successCallback, errorCallback) {
+        BarcodeScanner.prototype.scan = function (successCallback, errorCallback, args) {
             if (errorCallback == null) {
                 errorCallback = function () {
                 };
@@ -57,7 +57,7 @@ cordova.define("com.phonegap.plugins.barcodescanner.BarcodeScanner", function(re
                 return;
             }
 
-            exec(successCallback, errorCallback, 'BarcodeScanner', 'scan', []);
+         //   exec(successCallback, errorCallback, 'BarcodeScanner', 'scanna', [{'nome': 'melania'}]);
         };
 
         //-------------------------------------------------------------------

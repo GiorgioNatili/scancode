@@ -1,1 +1,4 @@
 *.DS_Store
+platforms/ios/.staging/*
+*.idea
+*.iml
